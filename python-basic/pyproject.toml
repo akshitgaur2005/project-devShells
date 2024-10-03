@@ -1,0 +1,20 @@
+[project]
+name = "dqn"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Akshit Gaur", email = "akshitgaur@protonmail.com"},
+]
+dependencies = [
+    "numpy>=2.1.1",
+    "torch>=2.4.1",
+    "gymnasium[box2d]>=0.29.4",
+    "pandas>=2.2.3",
+]
+requires-python = "==3.12.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
