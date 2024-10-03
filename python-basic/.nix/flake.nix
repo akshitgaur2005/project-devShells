@@ -24,31 +24,21 @@
       ];
 
       LD_LIBRARY_PATH = pkgs.lib.makeLibraryPath [
-        "/run/opengl-driver"
-        pkgs.cudaPackages_11.cudnn
-        pkgs.cudaPackages_11.libcublas
-        pkgs.cudaPackages_11.cudatoolkit
-        pkgs.cudaPackages_11.cudatoolkit.lib
-        pkgs.xorg.libX11
-        pkgs.libGL
         pkgs.glib
-        pkgs.xorg.libXi
         pkgs.glibc
-        pkgs.swig
         pkgs.stdenv.cc.cc
         pkgs.libz
       ];
 
-      PATH = pkgs.lib.makeBinPath [
-        pkgs.swig
-      ];
+      PATH =
+        pkgs.lib.makeBinPath [
+        ];
 
       shellHook = ''
         if [ ! -f .pdm-python ]; then
           pdm init
         fi
         pdm install
-        zsh
       '';
     };
   };
