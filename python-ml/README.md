@@ -1,6 +1,6 @@
-# python-basic
+# python-ml
 
-Development shell for a basic python project!
+Development shell for a basic python machine learning project!
 
 Install nix, enable flakes and run
 
