@@ -32,3 +32,7 @@ Though one thing to keep in mind is you have to work with Nix, not against it. I
 ### Flakes
 
 Flakes are an *experimental* feature of Nix, though do not let the name fool you. Flakes have been a part of Nix for many years now and are one of the principal components that make it great. Flakes allow us to have Lock files allowing true reproducibilty!
+
+### This Project
+
+This project is just an implementation of the technologies described above, namely, Nix, Flakes and pdm (for python). I could not find any elegant solution to managing python environments even after searching for 3 days, poetry2nix and dream2nix approach gave so many errors that I could hardly count, so began this humble script!
